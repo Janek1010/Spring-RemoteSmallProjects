@@ -6,4 +6,9 @@ public class HockeyCoach implements Coach {
     public String getDailyWorkout() {
         return "I like ice!!";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }
