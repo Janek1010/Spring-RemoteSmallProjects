@@ -14,7 +14,10 @@ public class BeanScopeDemoApp {
 
         Coach alphaCoach = context.getBean("myCoach", Coach.class);
 
+
+
         System.out.println(theCoach.getDailyFortune());
+        System.out.println(alphaCoach.getDailyFortune());
         System.out.println(alphaCoach.getDailyFortune());
 
     }
