@@ -15,10 +15,12 @@ public class BeanScopeDemoApp {
         Coach alphaCoach = context.getBean("myCoach", Coach.class);
 
 
+        boolean result = (theCoach == alphaCoach);
+        System.out.println("Pointing to the same object "+result);
 
-        System.out.println(theCoach.getDailyFortune());
-        System.out.println(alphaCoach.getDailyFortune());
-        System.out.println(alphaCoach.getDailyFortune());
+        System.out.println("Memory location for theCoach " + theCoach);
+        System.out.println("Memory location for alpha " + alphaCoach);
 
+        context.close();
     }
 }
